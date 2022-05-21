@@ -1,6 +1,3 @@
-# Desafio Semana #1
-
-```js
 // Declarar uma variável chamada `myvar`, sem valor.
 var myvar;
 
@@ -23,38 +20,27 @@ soma *3
 var souninja= true
 
 
-// Declare uma variável chamada `comida` que recebe um array com os valores 'arroz', 'feijão' e ovo'.
+// Declare uma variável chamada `comida` que recebe um array com os valores 'arroz', 'feijão' eovo'.
 var  comida=['arroz','feijão' 'ovo'] 
 
 // Digite a instrução que imprime o valor de 'feijao', que está na variável `comida`.
 comida[1]
 
 // Digite o código que verifica se a variável `soma' é igual a variável `myvar` (testando também o tipo).
-soma==mayvar
+soma===mayvar
 
 
 // Digite o código que verifica se a variável `myvar` é menor ou igual à variável `soma`.?
-
 myvar >=soma
 
-// Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
-function  divisao(x,y){
-  return x/y ;
-} 
 
+
+// Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
+function divisao(x,y){return x/y;}
 
 
 
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
 
-divisao(10, 2);
-
-
-
-/* termineu*/
-
-
-
-
-
+divisao(10,2)
