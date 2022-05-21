@@ -1,3 +1,5 @@
+
+refazendo o exercício
 // Declarar uma variável chamada `myvar`, sem valor.
 var myvar;
 
