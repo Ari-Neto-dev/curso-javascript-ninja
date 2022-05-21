@@ -9,8 +9,8 @@ A função deverá retornar o array atualizado.
 */
 function addItem(itens){
   myarray.push(itens)
-  return myarray;}
-
+  return myarray;
+}
 
 /*
 Adicione um novo array ao array criado no início do desafio, com ao menos 3
@@ -18,13 +18,10 @@ itens de tipos diferentes, mostrando o resultado no console.
 */
 console.log (addItem([19, {color: 'azul'} , function(){}]));
 
-
-
-
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
-"O segundo elemento do segundo array é [ELEMENTO]."
+"O segundo elemento do terceiro array é [ELEMENTO]."
 */
 console.log('O segundo elemento do segundo array é '+myarray[05][01]   +'.')
 
@@ -66,12 +63,13 @@ console.log( 'Números pares entre 100 e 120:' );
 
 var contador=100;
 for(var contador=100;contador<=120; contador++){ contador % 2===0?
-  console.log(contador):'';}
-
-
+  console.log(contador):'';
+}
 
 console.log( 'Números ímpares entre 111 e 125:' );
 
 var contador=100;
 for(var contador=100;contador<=120; contador++){ contador % 2!==0?
-  console.log(contador):'';}
+  console.log(contador):'';
+}
+
