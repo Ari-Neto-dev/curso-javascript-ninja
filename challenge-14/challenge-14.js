@@ -18,8 +18,10 @@ for (var i = 1; i <= 10; i++ ) {
 numberObjects.push({number:i });
 }
 console.log(numberObjects);
-/* abaixo me parece que é possível resolver*/
+
 var numberObjects=[{number:1},{number:2},{number:3},{number:4},{number:5},{number:6},{number:7},{number:8},{number:9},{number:10}]
+
+
 /*
 Crie um array chamado `justNumbers`, que terá como elementos somente os
 números do array criado acima. Mostre esse novo array no console.

@@ -11,11 +11,11 @@ Crie um objeto chamado `person`, com as propriedades:
 Preencha cada propriedade com os seus dados pessoais, respeitando o tipo
 de valor para cada propriedade.
 
-var person ={ 
+var person ={
     name:'Ariosvaldo ',
     lastname: 'de Azevedo Neto',
     age:61,
-    
+
 };
 */
 // ?
@@ -41,7 +41,7 @@ seguintes propriedades:
 `pages`: Number
 */
 books.push({name:'Gestão da tecnologia da informação',pages:430 });
-books.push({name: 'O poder dos quietos',pages: 336}); 
+books.push({name: 'O poder dos quietos',pages: 336});
 books.push({name:'A segunda era das máquinas',pages: 210});
 books.push({name:'BlockChain para leigos',pages: 240})
 console.log( '\nLista de livros:' );
@@ -81,7 +81,7 @@ console.log(books);
 /*
 Converta os livros novamente para objeto.
 */
-JSON.parse(books); 
+JSON.parse(books);
 console.log( '\nAgora os livros são objetos novamente:' );
 
 /*
@@ -98,24 +98,26 @@ for ( var variavelcontador= 0; variavelcontador < books .length; variavelcontado
 Crie um array chamado `myName`. Cada item desse array deve ser uma letra do
 seu nome. Adicione seu nome completo no array.
 */
-// ?
+//  var myName =['A','r','i','o','s','v','a','l','d','o' ];
+
 console.log( '\nMeu nome é:' );
 
 /*
 Juntando todos os itens do array, mostre no console seu nome.
 */
-// ?
+//  myName.join('')
 
 console.log( '\nMeu nome invertido é:' );
 
 /*
 Ainda usando o objeto acima, mostre no console seu nome invertido.
 */
-// ?
+// myName.reverse()
 
 console.log( '\nAgora em ordem alfabética:' );
 /*
 Mostre todos os itens do array acima, odenados alfabéticamente.
 */
-// ?
+// myName.sort()
+
 })();

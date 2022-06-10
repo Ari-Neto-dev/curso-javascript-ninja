@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
 // Envolva todo o código desse arquivo em uma IIFE (incluindo esse comentário).
 
@@ -27,7 +27,7 @@ var person = {
 };
 
 
- 
+
 /*
 Use um loop para percorrer o objeto criado acima, mostrando no console
 a frase:
@@ -40,13 +40,13 @@ Após o loop, mostre a frase:
 
 
 var counter = 0;
-for( var abacaxi in person){ 
+for( var abacaxi in person){
     console.log ('The ' + abacaxi+' of person is '+person[abacaxi] +'') ;counter++;}
 
 
     console.log('The person has ' + counter + ' properties');
 
-    
+
 
 /*
 Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto
@@ -57,7 +57,7 @@ Após a função, mostrar a mensagem no console:
 */
 
 
-/* poder responder dessa forma !
+/* poderá ser dessa forma !
 function moreThan ( age) {
     if( person.age > 25 ) {return  true;}
     return false;
@@ -99,7 +99,7 @@ Mostrar no console os números do array.
 */
 console.log( 'Pares de 0 a 20:' );
 numbers = [];
-for ( var i = 0; i <= 20; i++){ 
+for ( var i = 0; i <= 20; i++){
     if(i % 2 === 0) {
         continue;
     }

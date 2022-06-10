@@ -12,8 +12,8 @@ resolver o problema corretamente.
 */
   var five = "5";
   console.log(five + " é número?", typeof five === "number");
-  /* resposta  
-  var five = 5;
+  /* resposta
+  var five = number('5');
   console.log(five + " é número?", typeof five === "number");
  5 é número? true*/
 
@@ -24,15 +24,15 @@ resolver o problema corretamente.
     typeof concat === "string"
   );
 
-  /*resposta   
+  /*resposta
   var concat = String(10) + 10;
   console.log(
     '"' + concat + '" é uma string? E é igual a "1010"?',
     typeof concat === "string"
   );
-               
+
 "10 + 10" é uma string? E é igual a "1010"? true */
-               
+
 
   /*
 Voltando ao exemplo da calculadora, vamos utilizar mais uma abordagem
@@ -64,6 +64,8 @@ Caso contrário, "false".
 
   function isOperatorValid(operator) {
     /* fazendo com if=>  if (operator === '+'||operator==='-'||operator ==='*'||operator === '/'||operator ==='%'){ return true;} return false;}
+
+
 /* respondendo sem usar 'if' ou 'switch' =>
     */ return (
       operator === "+" ||
@@ -80,12 +82,12 @@ Caso contrário, "false".
 function isOperatorValid (operator){
   return operation[operator]!== undefined;}
  console.log( isOperatorValid('+'));
- 
+
   /*forma abreviada  para evitar trabalho no futuro*/
-    function isOperatorValid( operador) { 
+    function isOperatorValid( operador) {
       return !!operation[operador];
     }
-    console.log ( !!function() {} ); 
+    console.log ( !!function() {} );
 
   /*
 Agora vamos criar a calculadora.
@@ -103,7 +105,7 @@ os dois parâmetros da função de retorno de "calculator".
     if ( !isOperatorValid(operator )) {
       return false;
     }
-    return function( x, y ) { 
+    return function( x, y ) {
       if(typeof x !== 'number'&&  typeof y !== 'number'){
         return false;
       }
@@ -167,12 +169,12 @@ parâmetros para o método "log" de "console":
 - O segundo, a função de soma, passando os dois operandos.
 - Se "sum" for "false", mostrar no console a mensagem de erro.
 */
-  if (sum) { 
+  if (sum) {
     number1= 10;
     number2= 12;
     console.log( showOperationMessage( operationSignal, number1, number2 ), sum( number1, number2));
   }
-  else { 
+  else {
     console.log( showErrorMessage( operationSignal ));
   }
 
@@ -183,49 +185,49 @@ divisão e resto. Crie variáveis com os nomes "subtraction",
 */
   operationSignal = '-';
   var subtraction = calculator( operationSignal );
-  if (subtraction) { 
+  if (subtraction) {
     number1 = 8;
     number2 = 11;
     console.log( showOperationMessage( operationSignal, number1, number2 ), subtraction( number1, number2));
   }
-  else { 
+  else {
     console.log( showErrorMessage( operationSignal ));
   }
-  
+
 
 
 operationSignal = '*';
 var multiplication = calculator( operationSignal );
-if (multiplication) { 
+if (multiplication) {
   number1 = 80;
   number2 = 5;
   console.log( showOperationMessage( operationSignal, number1, number2 ), multiplication( number1, number2));
 }
-else { 
+else {
   console.log( showErrorMessage( operationSignal ));
 }
 
 
 operationSignal = '/';
 var division = calculator( operationSignal );
-if (division) { 
+if (division) {
   number1 = 150;
   number2 = 3;
   console.log( showOperationMessage( operationSignal, number1, number2 ), division( number1, number2));
 }
-else { 
+else {
   console.log( showErrorMessage( operationSignal ));
 }
 
 
 operationSignal = ' % ';
 var mod = calculator( operationSignal );
-if (mod) { 
+if (mod) {
   number1 = 150;
   number2 = 11;
   console.log( showOperationMessage( operationSignal, number1, number2 ), mod( number1, number2));
 }
-else { 
+else {
   console.log( showErrorMessage( operationSignal ));
 }
 
@@ -237,12 +239,12 @@ a mensagem de erro será mostrada no console.
 
 operationSignal = 'lala';
   var invalid = calculator( operationSignal );
-  if (invalid) { 
+  if (invalid) {
     number1 = 8;
     number2 = 11;
     console.log( showOperationMessage( operationSignal, number1, number2 ), invalid( number1, number2));
   }
-  else { 
+  else {
     console.log( showErrorMessage( operationSignal ));
   }
 
